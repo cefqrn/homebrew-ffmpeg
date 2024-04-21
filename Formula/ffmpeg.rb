@@ -7,6 +7,7 @@ class Ffmpeg < Formula
   head "https://git.ffmpeg.org/ffmpeg.git"
 
   depends_on "pkg-config" => :build
+  depends_on "nasm" => :build
 
   depends_on "lame"  # libmp3lame
   depends_on "openh264"  # libopenh264
