@@ -36,7 +36,7 @@ class Ffmpeg < Formula
       --enable-libx265
     ]
 
-    system "./configure", *args
+    system "./configure", "--prefix=#{prefix}", *args
     system "make"
     system "make", "install"
   end
