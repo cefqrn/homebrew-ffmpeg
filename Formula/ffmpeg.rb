@@ -6,19 +6,19 @@ class Ffmpeg < Formula
   license "GPL-2.0-or-later"
   head "https://git.ffmpeg.org/ffmpeg.git"
 
-  depends_on "pkg-config" => :build
   depends_on "nasm" => :build
+  depends_on "pkg-config" => :build
 
-  depends_on "lame"  # libmp3lame
-  depends_on "openh264"  # libopenh264
-  depends_on "openjpeg"  # libopenjpeg
-  depends_on "opus"  # libopus
+  depends_on "lame" # libmp3lame
   depends_on "librsvg"
   depends_on "libvorbis"
   depends_on "libvpx"
-  depends_on "webp"  # libwebp
-  depends_on "x264"  # libx264
-  depends_on "x265"  # libx265
+  depends_on "openh264" # libopenh264
+  depends_on "openjpeg" # libopenjpeg
+  depends_on "opus" # libopus
+  depends_on "webp" # libwebp
+  depends_on "x264" # libx264
+  depends_on "x265" # libx265
 
   def install
     args = %w[
@@ -41,5 +41,8 @@ class Ffmpeg < Formula
     system "make", "install"
   end
 
-  test do true end  # lol
+  test do
+    # lol
+    true
+  end
 end
