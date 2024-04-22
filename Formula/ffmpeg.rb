@@ -42,7 +42,7 @@ class Ffmpeg < Formula
   end
 
   test do
-    # lol
-    true
+    system bin/"ffmpeg", "-t", "5", "-f", "lavfi", "-i", "testsrc", "-pix_fmt", "yuv420p", testpath/"out.mp4"
+    assert_predicate testpath/"out.mp4", :exist?
   end
 end
