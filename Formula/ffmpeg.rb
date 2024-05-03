@@ -13,7 +13,6 @@ class Ffmpeg < Formula
   depends_on "librsvg"
   depends_on "libvorbis"
   depends_on "libvpx"
-  depends_on "openh264" # libopenh264
   depends_on "openjpeg" # libopenjpeg
   depends_on "opus" # libopus
   depends_on "webp" # libwebp
@@ -25,7 +24,6 @@ class Ffmpeg < Formula
       --enable-gpl
       --enable-shared
       --enable-libmp3lame
-      --enable-libopenh264
       --enable-libopenjpeg
       --enable-libopus
       --enable-librsvg
