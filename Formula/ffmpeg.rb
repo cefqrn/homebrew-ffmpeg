@@ -15,6 +15,7 @@ class Ffmpeg < Formula
   depends_on "libvpx"
   depends_on "openjpeg" # libopenjpeg
   depends_on "opus" # libopus
+  depends_on "sdl2"
   depends_on "webp" # libwebp
   depends_on "x264" # libx264
   depends_on "x265" # libx265
